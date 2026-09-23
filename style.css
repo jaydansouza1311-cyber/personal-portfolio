@@ -1,0 +1,92 @@
+/* remove default spacing*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Basic setting for whole website*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+/*Navigation*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: white;
+}
+
+/* Name in Navigation */
+nav h2 {
+    font-size: 24px;
+}
+
+/*Navigation Links*/
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+/*Link Appearance*/
+nav a {
+    text-decoration: none;
+    color: #1f2937;
+    font-weight: 500;
+}
+
+/* Change link colour when hovering */
+nav a:hover {
+    color: #2563eb;
+}
+
+/* Home Section */
+#home {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 8%;
+}
+
+/* Main heading */
+#home h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+/* Job Title */
+#home h2 {
+    font-size: 30px;
+    color: #2563eb;
+    margin-bottom: 20px;
+}
+
+/* Intro paragraph */
+#home p {
+    max-width: 600px;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Buttons */
+#home a {
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 15px;
+    padding: 12px 24px;
+    border-radius: 6px;
+    background-color: #2563eb;
+    color: white;
+}
+
+/* Button hover effect */
+#home a:hover {
+    background-color: #1d4ed8;
+}
