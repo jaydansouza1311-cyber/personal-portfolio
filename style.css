@@ -46,49 +46,55 @@ nav a:hover {
     color: #2563eb;
 }
 
-/* Home Section */
+/* Home section */
 #home {
-    min-height: 80vh;
+    min-height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0 8%;
+    background: linear-gradient(135deg, #f5f7fa, #e8eef7);
 }
 
 /* Main heading */
 #home h1 {
-    font-size: 60px;
+    font-size: 64px;
     margin-bottom: 10px;
+    line-height: 1.1;
 }
 
-/* Job Title */
+/* Job title */
 #home h2 {
     font-size: 30px;
     color: #2563eb;
     margin-bottom: 20px;
 }
 
-/* Intro paragraph */
+/* Introduction paragraph */
 #home p {
-    max-width: 600px;
-    font-size: 18px;
+    max-width: 650px;
+    font-size: 19px;
     margin-bottom: 30px;
+    color: #4b5563;
 }
 
-/* Buttons */
+/* Hero buttons */
 #home a {
     display: inline-block;
     text-decoration: none;
     margin-right: 15px;
-    padding: 12px 24px;
-    border-radius: 6px;
+    padding: 13px 26px;
+    border-radius: 8px;
     background-color: #2563eb;
     color: white;
+    font-weight: 600;
+    transition: 0.2s;
 }
 
 /* Button hover effect */
 #home a:hover {
     background-color: #1d4ed8;
+    transform: translateY(-2px);
 }
 
 /* About Me Section */
@@ -121,14 +127,28 @@ nav a:hover {
     margin-bottom: 40px;
 }
 
+/* Project Container */
+.projects-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
 /* Project Card */
 .project-card {
-    max-width: 800px;
+    flex: 1;
+    min-width: 300px;
     padding: 35px;
-    margin-bottom: 30px;
     background-color: white;
     border-radius: 12px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.2s;
+}
+
+/* Project Card Hover Effect */
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
 }
 
 /* Project Card Headings */
@@ -318,4 +338,92 @@ nav a:hover {
 /* Hover Effect */
 .contact-links a:hover, .cv-button:hover {
     background-color: #1d4ed8;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+
+    /* Navigation */
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px 5%;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* Home section */
+    #home {
+        min-height: 70vh;
+        padding: 60px 5%;
+        text-align: center;
+        align-items: center;
+    }
+
+    #home h1 {
+        font-size: 42px;
+    }
+
+    #home h2 {
+        font-size: 24px;
+    }
+
+    #home p {
+        font-size: 16px;
+    }
+
+    /* Buttons */
+    #home a {
+        margin: 5px;
+    }
+
+    /* Sections */
+    #about,
+    #projects,
+    #skills,
+    #experience,
+    #contact {
+        padding: 70px 5%;
+    }
+
+    /* Section headings */
+    #about h2,
+    #projects h2,
+    #skills h2,
+    #experience h2,
+    #contact h2 {
+        font-size: 32px;
+    }
+
+    .projects-container {
+        flex-direction: column;
+    }
+
+    .project-card {
+        min-width: 100%;
+    }
+
+    /* Skills */
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .skill-category {
+        width: 100%;
+    }
+
+    /* Contact buttons */
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-links a,
+    .cv-button {
+        width: 200px;
+    }
 }
