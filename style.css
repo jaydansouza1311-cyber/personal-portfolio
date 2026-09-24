@@ -177,3 +177,145 @@ nav a:hover {
     border-radius: 20px;
     font-size: 14px;
 }
+
+/* Skills section */
+#skills {
+    padding: 100px 8%;
+    background-color: #f5f7fa;
+}
+
+/* Skills Heading */
+#skills h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+/* Skills Container Class */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Skills Category Class */
+.skill-category {
+    flex: 1;
+    min-width: 220px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Skills Category Heading */
+.skill-category h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+/* Skill Category List */
+.skill-category ul {
+    list-style: none;
+}
+
+.skill-category li {
+    margin-bottom: 10px;
+    color: #4b5563;
+}
+
+/* Experience section */
+#experience {
+    padding: 100px 8%;
+    background-color: white;
+}
+
+/* Experience Heading */
+#experience h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+/* Experience Container */
+.experience-container {
+    max-width: 900px;
+}
+
+/* Experience Card */
+.experience-card {
+    padding: 30px;
+    margin-bottom: 25px;
+    border-left: 4px solid #2563eb;
+    background-color: #f5f7fa;
+    border-radius: 0 10px 10px 0;
+}
+
+/* Experience Card Headings */
+.experience-card h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.experience-card h4 {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+/* Experience Date */
+.experience-date {
+    color: #6b7280;
+    margin-bottom: 15px;
+}
+
+/* Experience Card List */
+.experience-card ul {
+    padding-left: 20px;
+}
+
+.experience-card li {
+    margin-bottom: 8px;
+}
+
+/* Contact section */
+#contact {
+    padding: 100px 8%;
+    text-align: center;
+    background-color: #f5f7fa;
+}
+
+/* Contact Heading */
+#contact h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* Contact Paras */
+#contact p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+}
+
+/* Contact Links */
+.contact-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+/* Contact Links Button */
+.contact-links a, .cv-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+/* Hover Effect */
+.contact-links a:hover, .cv-button:hover {
+    background-color: #1d4ed8;
+}
