@@ -210,36 +210,44 @@ nav a:hover {
     margin-bottom: 40px;
 }
 
-/* Skills Container Class */
+/* Skills layout */
 .skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
 }
 
-/* Skills Category Class */
+/* Individual skill cards */
 .skill-category {
-    flex: 1;
-    min-width: 220px;
     padding: 30px;
     background-color: white;
+    border: 1px solid #e5e7eb;
     border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
-/* Skills Category Heading */
+/* Card hover effect */
+.skill-category:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Category headings */
 .skill-category h3 {
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 20px;
+    color: #2563eb;
 }
 
-/* Skill Category List */
+/* Remove default bullet points */
 .skill-category ul {
     list-style: none;
+    padding: 0;
 }
 
+/* Individual skills */
 .skill-category li {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     color: #4b5563;
 }
 
@@ -340,6 +348,16 @@ nav a:hover {
     background-color: #1d4ed8;
 }
 
+/* Project screenshots */
+.project-image {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    background-color: #f5f7fa;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
 /* Mobile layout */
 @media (max-width: 768px) {
 
@@ -409,7 +427,7 @@ nav a:hover {
 
     /* Skills */
     .skills-container {
-        flex-direction: column;
+        grid-template-columns: 1fr;
     }
 
     .skill-category {
