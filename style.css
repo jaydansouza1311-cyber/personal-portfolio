@@ -392,14 +392,6 @@ footer a:hover {
     color: #60a5fa;
 }
 
-/* Footer on smaller screens */
-@media (max-width: 768px) {
-    footer {
-        flex-direction: column;
-        text-align: center;
-    }
-}
-
 /* Mobile layout */
 @media (max-width: 768px) {
 
@@ -442,20 +434,12 @@ footer a:hover {
     }
 
     /* Sections */
-    #about,
-    #projects,
-    #skills,
-    #experience,
-    #contact {
+    #about, #projects, #skills, #experience, #contact {
         padding: 70px 5%;
     }
 
     /* Section headings */
-    #about h2,
-    #projects h2,
-    #skills h2,
-    #experience h2,
-    #contact h2 {
+    #about h2, #projects h2, #skills h2, #experience h2, #contact h2 {
         font-size: 32px;
     }
 
@@ -482,8 +466,12 @@ footer a:hover {
         align-items: center;
     }
 
-    .contact-links a,
-    .cv-button {
+    .contact-links a, .cv-button {
         width: 200px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
     }
 }
